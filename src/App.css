@@ -4,6 +4,17 @@
 .nav{
   background-color: #1082c1;
   box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav h2{
+  color: white;
+}
+.nav h2 span{
+  font-size: 45px;
+  font-family: Cursive;
+  color: yellow;
 }
 
 .nav ul li {
