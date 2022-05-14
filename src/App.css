@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+.nav{
+  background-color: #1082c1;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}
+
+.nav ul li {
+  
+    display: inline-block;
+    padding: 20px;
+    
+}
+.nav ul li a{
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+.App-header1 h1{
+  color: #1082c1;
+}
+.App-header {
+  /* background-color: #282c34; */
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  grid-column-gap: 5px;
+
+  
+}
+.App-id{
+  border: 2px solid #1082c1;
+  margin: 15px;
+  
+  
+}
+.App-id:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}
+.App-id a{
+  text-decoration: none;
+}
+.App-id h4{
+  color:#1082c1 ;
+}
+.App-id p{
+  color: black;
+}
+
+@media(max-width: 425px){
+  .App-header{
+    grid-template-columns: 1fr 1fr ;
+  }
+  
+}
+
