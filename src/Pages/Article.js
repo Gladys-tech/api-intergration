@@ -31,9 +31,15 @@ function Article() {
       {loading && <h1>Deleting....</h1>}
 
       {!data ? (
-        <h2>Loading...</h2>
+        // <h2>Loading...</h2>
+
+        <div class="d-flex justify-content-center">
+        <div class="spinner-border text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+        </div>
+        </div>
       ) : (
-        <article className="w-70 border border-secondary m-2">
+        <article className="article">
           <h3>USER-ID: {data.userId}</h3>
           <h5>{data.title}</h5>
           <p>{data.body}</p>

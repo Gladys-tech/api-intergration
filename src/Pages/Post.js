@@ -14,7 +14,9 @@ function handleChange(event){
 function handleSubmit(event){
     event.preventDefault();
     setLoading(true);
-    fetch('https://jsonplaceholder.typicode.com/posts', {
+    //
+    //http://api-v3.safe-courier.ml/api/v1/auth/login
+    fetch('https://jsonplaceholder.typicode.com/posts  ', {
         method: 'POST',
         body: JSON.stringify({
           title: inputs.title,
@@ -39,7 +41,13 @@ function handleSubmit(event){
 
   return (
     <div className="App">
-    {loading ? <h2>Loading...</h2> : (
+    {loading ? 
+    <div class="d-flex justify-content-center">
+    <div class="spinner-border text-warning" role="status">
+    <span class="visually-hidden">Loading...</span>
+    </div>
+    </div>
+     : (
       <>
     <h1>Forms</h1>
     <h2>title - {data.title}</h2>
@@ -74,7 +82,7 @@ function handleSubmit(event){
         onChange={handleChange}
       />
     
-
+    <br></br>
       <input type="submit" />
     </form>
   </div>

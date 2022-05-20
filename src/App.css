@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  padding: 5px;
+}
+.App input{
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
 }
 .nav{
   background-color: #1082c1;
@@ -66,4 +72,17 @@
   }
   
 }
+.article{
+  border: 2px solid #1082c1;
+  margin: 15px;
+  width: 300px;
+  align-items: center;
+}
 
+.footer ul li{
+  list-style: none;
+}
+.footer{
+  background-color:dimgray ;
+  color: white;
+}

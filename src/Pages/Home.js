@@ -14,7 +14,14 @@ function Home() {
     <div  className="App-header1">
       <h1>MY LATIN BLOG</h1>
       {!data ? (
-        <h2>Load...</h2>
+        // <h2>Load...</h2>
+
+        <div class="d-flex justify-content-center">
+        <div class="spinner-border text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+        </div>
+        </div>
+
       ) : (
         <div className="App-header">
           {[...data].map((info) => (
