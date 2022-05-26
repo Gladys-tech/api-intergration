@@ -46,7 +46,7 @@ class Api {
 
     // authentication
     static async login(data) {
-        return fetch(`${API_URL}/login`, {
+        return fetch(`${API_URL}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

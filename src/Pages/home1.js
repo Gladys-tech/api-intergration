@@ -42,15 +42,29 @@ const Home = () => {
   return <div className="App">
     <h1>Home</h1>
     <h3> Welcome {user?.email} </h3>
-    {/* <h3> Parcels </h3>
-    {loading ? <h1>Fetching parcels...</h1> : <ul>
-      {parcels.map((parcel) => {
-        return <li key={parcel.id}>
-          <h4>{parcel.name}</h4>
-          <p>{parcel.description}</p>
-        </li>
-      })}
-    </ul>} */}
+
+
+    {!data ? (
+        // <h2>Load...</h2>
+
+        <div class="d-flex justify-content-center">
+        <div class="spinner-border text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+        </div>
+        </div>
+
+      ) : (
+        <div className="App-header">
+          {[...data].map((info) => (
+            <article key={info.id} className="App-id">
+              <Link to={`/article/${info.id}`}>
+                <h4>{info.title}</h4>
+                <p>{info.body}</p>
+              </Link>
+            </article>
+          ))}
+        </div>
+      )}
   </div>;
 };
 

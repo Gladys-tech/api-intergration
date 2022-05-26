@@ -16,7 +16,7 @@ function handleSubmit(event){
     setLoading(true);
     //
     //http://api-v3.safe-courier.ml/api/v1/auth/login
-    fetch('https://jsonplaceholder.typicode.com/posts  ', {
+    fetch('http://localhost:4001/login  ', {
         method: 'POST',
         body: JSON.stringify({
           title: inputs.title,
