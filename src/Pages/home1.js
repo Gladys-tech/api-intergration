@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import Api from "../Api/index";
 
 
@@ -23,6 +24,14 @@ const Home = () => {
   //   console.log(data);
   // }
 
+  const [data, setData] = useState("");
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((res) => res.json())
+      .then((json) => setData(json));
+  }, []);
+  console.log(data);
 
 
   useEffect(() => {

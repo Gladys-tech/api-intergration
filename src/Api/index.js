@@ -63,15 +63,15 @@ class Api {
     //         body: JSON.stringify(data)
     //     })
     // }
-    // static async authLogout() {
-    //     return fetch(`${API_URL}/auth/logout`, {
-    //         method: 'POST',
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //             'Authorization': `Bearer ${TOKEN}`
-    //         }
-    //     })
-    // }
+    static async authLogout() {
+        return fetch(`${API_URL}/logout`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': ` ${TOKEN}`
+            }
+        })
+    }
 }
 
 export default Api

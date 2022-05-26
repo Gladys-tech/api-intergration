@@ -10,7 +10,8 @@ import Error from "./Pages/Error"
 import Navigation from "./Components/Navigation/Index"
 import Footer from "./Components/Footer/Footer";
 import Login from "./Pages/Login";
-//  import Home from "./Pages/home1";
+// import Home from "./Pages/home1";
+import Logout from "./Pages/Logout";
 
 
 import './App.css';
@@ -36,6 +37,7 @@ function App() {
       <Route path="/post" element={<Post />}></Route>
       <Route path="/article/:id" element={<Article />}></Route>
       <Route path="*" element={<Error />}></Route>
+      <Route path="/logout" element={<Logout/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>

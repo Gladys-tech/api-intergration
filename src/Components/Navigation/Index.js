@@ -16,6 +16,7 @@ function Navigation() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/post">Post</Link></li>
             <li><Link to="/login">login</Link></li>
+            <li><Link to="/logout">logout</Link></li>
             <li className='mx-2 nav'>{info}</li>
 
         </ul>
